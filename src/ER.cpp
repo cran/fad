@@ -2,14 +2,7 @@
 #ifndef E_R_CPP
 #define E_R_CPP
 
-/*
- * #include <iostream>
- * #include <iomanip>
- * #include <limits>
- * #include <time.h>
- * // using namespace std;
- */
-
+#define STRICT_R_HEADERS
 #include <Rcpp.h>
 using namespace Rcpp;
 #include <math.h>
@@ -27,6 +20,11 @@ using namespace Rcpp;
 #define EPSREL 1e-12
 #endif
 
+NumericVector ERF(int P, NumericVector Mu, NumericVector Sigma);
+
+NumericVector logIv(int P, NumericVector Mu, NumericVector Sigma);
+
+
 /* Do not modify below this */
 /*
 static double logI_iter(int k,double &mu,double &sigma)
@@ -37,7 +35,6 @@ static double logI_iter(int k,double &mu,double &sigma)
 */
 
 static double logI(int k,double mu,double sigma);
-
 
 static double logratio(int k,double mu,double sigma);
 
@@ -64,7 +61,6 @@ static inline double f(double z,int k,double &z1, double &theta,double &klogz1pt
  * Out args:     ER
 */
 
-
 // [[Rcpp::export]] 
 NumericVector ERF(int P, NumericVector Mu, NumericVector Sigma)
 {
@@ -81,6 +77,7 @@ NumericVector ERF(int P, NumericVector Mu, NumericVector Sigma)
     return out;
 }
 
+// [[Rcpp::export]] 
 NumericVector logIv(int P, NumericVector Mu, NumericVector Sigma)
 {
   int j;
@@ -150,6 +147,7 @@ static double logI(int k,double mu,double sigma)
   
   return(result);
 }
+
 
 static double logratio(int k,double mu,double sigma)
 {
@@ -414,7 +412,6 @@ static const double w87b[23] = {
     0.037334228751935040321235449094698,
     0.037361073762679023410321241766599
 } ;
-
 
 static double
         rescale_error (double err, const double & result_abs, const double &result_asc)

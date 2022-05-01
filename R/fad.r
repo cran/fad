@@ -42,11 +42,12 @@
 #' @param \dots Components of \code{control} can also be supplied as named arguments to \code{fad}.
 #'
 #' @return An object of class \code{"fad"} with components
-#'\item{loadings}{A matrix of loadings, one column for each factor.  The
+#'\item{loadings}{A matrix of loadings on the correlation scale, one column for each factor.  The
 #' factors are ordered in decreasing order of sums of squares of
 #' loadings, and given the sign that will make the sum of the loadings
 #' positive.  This is of class \code{"loadings"}}
-#' \item{uniquenesses}{The uniquenesses computed.}
+#' \item{uniquenesses}{The uniquenesses computed on the correlation scale.}
+#' \item{sd}{The estimated standard deviations.}
 #' \item{criteria}{The results of the optimization: the value of the
 #' criterion (a linear function of the negative log-likelihood) and information
 #' on the iterations used.}
@@ -320,6 +321,7 @@ fad <- function (x, factors, data = NULL, covmat = NULL, n.obs = NA,
   fit$sd = 1/isds;
   fit$n.obs <- n.obs
   fit$call <- cl
+  class(fit) <- "fad"
   fit
 }
 
