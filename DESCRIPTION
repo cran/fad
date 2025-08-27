@@ -1,8 +1,8 @@
 Package: fad
 Type: Package
 Title: Factor Analysis for Data
-Version: 0.9-1
-Date: 2022-04-27
+Version: 0.9-3
+Date: 2025-08-26
 Authors@R: c(
     person("Somak", "Dutta", , "somakd@iastate.edu", c("aut", "cre")),
     person("Fan", "Dai", , "fd43@iastate.edu", "aut"),
@@ -21,12 +21,12 @@ Depends: R (>= 3.0.2), methods, RSpectra (>= 0.16-1)
 Imports: Matrix (>= 1.1-0), Rcpp (>= 0.11.5)
 LinkingTo: Rcpp, RSpectra, RcppEigen
 NeedsCompilation: yes
-Suggests: knitr
+Suggests: knitr, GPArotation
 VignetteBuilder: knitr
-RoxygenNote: 7.1.2
-Packaged: 2022-05-01 03:39:04 UTC; somakd
+RoxygenNote: 7.3.2
+Packaged: 2025-08-26 23:38:42 UTC; somakd
 Author: Somak Dutta [aut, cre],
   Fan Dai [aut],
   Ranjan Maitra [ctb]
 Repository: CRAN
-Date/Publication: 2022-05-01 14:20:05 UTC
+Date/Publication: 2025-08-27 00:00:02 UTC

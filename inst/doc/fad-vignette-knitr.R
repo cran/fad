@@ -1,8 +1,15 @@
+## ----include=FALSE------------------------------------------------------------
+library(knitr)
+opts_chunk$set(
+concordance=TRUE
+)
+
 ## ----setup, include=FALSE, cache=FALSE,echo=FALSE---------------------------------------
 library(knitr)
 # set global chunk options
 opts_chunk$set(fig.path='figure/fad-', fig.align='center', fig.show='hold')
 options(formatR.arrow=TRUE,width=90)
+Sys.setenv(RSTUDIO_PDFLATEX = "/Library/TeX/texbin/latexmk")
 
 ## ----load-------------------------------------------------------------------------------
 library(fad)

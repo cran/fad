@@ -1,4 +1,4 @@
-2b1b8544a83ff0c407a70b4b61c5ef5a *DESCRIPTION
+8806c037e8f3cb98bde7d683c4bb26b2 *DESCRIPTION
 fd0c1015c1503b38a5e70b00a9793d54 *NAMESPACE
 f9c2e4d22117a8682a39b73ce4992ea8 *R/AECM_cycle.R
 32a791ad78676cb766ba888d156923ad *R/CartToSph.R
@@ -10,7 +10,7 @@ c6a88dbd8d8f486049ff44e1532b50de *R/RcppExports.R
 82565a15cb1c23c4dde73e37118064de *R/SphToCart.R
 bf0664906e65b8062cb9e21da7de4f25 *R/fad.fit.X.r
 c00d301282127ed80fccfcb60363ce46 *R/fad.fit.cor.r
-a7c646d67e46b286ff43371b05472c84 *R/fad.r
+78ab3e7f3f244d3fb3f22fa3496b5703 *R/fad.r
 79a84932f2a6a3bbb6ad518ea2229c78 *R/fads.R
 646080390cd2a192b5a8a6814e81eb8c *R/fads.fit.rxmd.r
 2c151e0d67bd0576b354bcbaed4227a7 *R/get.start.pc.r
@@ -18,12 +18,15 @@ a7c646d67e46b286ff43371b05472c84 *R/fad.r
 3f77f86d8bee00c5b43723c57ab0c68d *R/optim_fad.r
 7c0953950b97ac94394d75e53d2f3132 *R/print.r
 c656a51b91e0bdacd152a078675bb6b6 *R/random-initial.R
-efcfe0452da53b35f4be7834fd37be8f *R/rotations.r
+ecb635000734b83169722cb040901cb8 *R/rotations.r
 583c924529ca0be28e4aadff2341eefb *R/zzz.r
-0cea58b47433b5085f6309f7ea6e5a39 *build/vignette.rds
-99dc0872d3a26d605e367c8c7bb8dd4d *inst/doc/fad-vignette.R
-cb22a5c8de00c0f4efe1c579196ad7f3 *inst/doc/fad-vignette.Rnw
-bc8e854b29daad7c53e764491a32558a *inst/doc/fad-vignette.pdf
+ec5e0ad8e19961294f3f1619e5c99bed *build/vignette.rds
+e4bea0bcb0e2018a17890582863c0634 *inst/doc/fad-vignette-knitr.R
+ec4ae3bfbd321ab7ebbbaea82d7d2f8b *inst/doc/fad-vignette-knitr.Rnw
+bf3554d01ad7d0d9935c94a8099443c7 *inst/doc/fad-vignette-knitr.pdf
+7916338798f4294e8d5e6c360ee05257 *inst/doc/fad-vignette.R
+e0fdc7a6f217166db1348fa604659c20 *inst/doc/fad-vignette.Rnw
+4b515224af61ffbcd9b40221e235cf45 *inst/doc/fad-vignette.pdf
 d6df31532f20e9334bdbdd11add5ced8 *man/fad.Rd
 e5fbcfc7503e878f108b4b50985857de *man/fads.Rd
 42197f217563f4a9ab65a49d01786c80 *man/print.fad.Rd
@@ -32,7 +35,9 @@ c2a9107b2202cb7da9b2d63ec63108e3 *src/ER.cpp
 3fe6bed970de4fa2088f0aa2e6991935 *src/Makevars
 3fe6bed970de4fa2088f0aa2e6991935 *src/Makevars.win
 cbd8fdbd30a1c58d63d7b3cec45dbf8e *src/RcppExports.cpp
-dc48d4dc4fec635aca823dbeb77f690b *src/eig_RXmD.cpp
+3e412cf5415a058710cfdcfc57599e59 *src/eig_RXmD.cpp
 e876164203a2a42571f4e317f97b24a1 *src/sph.cpp
 139acf39191aafe3468513c42f60d385 *src/utils.cpp
-cb22a5c8de00c0f4efe1c579196ad7f3 *vignettes/fad-vignette.Rnw
+fb6a91619aedb94356969a10a92560c1 *vignettes/fad-vignette-concordance.tex
+ec4ae3bfbd321ab7ebbbaea82d7d2f8b *vignettes/fad-vignette-knitr.Rnw
+e0fdc7a6f217166db1348fa604659c20 *vignettes/fad-vignette.Rnw

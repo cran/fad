@@ -1,7 +1,7 @@
 \documentclass{article}
 %\VignetteEngine{knitr::knitr}
 %\VignetteEncoding{UTF-8}
-%\VignetteIndexEntry{fad vignette}
+%\VignetteIndexEntry{An Introduction to \texttt{FAD} for Exploratory Factor Analysis with High-dimensional Gaussian Data}
 
 \usepackage[sc]{mathpazo}
 \usepackage{bm}
@@ -23,14 +23,12 @@
  \usepackage{authblk}
 
 \begin{document}
-%\SweaveOpts{concordance=TRUE}
 
 <<setup, include=FALSE, cache=FALSE,echo=FALSE>>=
 library(knitr)
 # set global chunk options
 opts_chunk$set(fig.path='figure/fad-', fig.align='center', fig.show='hold')
 options(formatR.arrow=TRUE,width=90)
-Sys.setenv(RSTUDIO_PDFLATEX = "/Library/TeX/texbin/latexmk")
 @
 
 
@@ -75,7 +73,7 @@ args(fad)
 \item[\texttt{na.action}:] The na.action to be used if x is used as a formula. 
 \item[\texttt{start}:] NULL or a matrix of starting values, each column giving an initial set of uniquenesses.
 \item[\texttt{score}:] Type of scores to produce, if any. The default is none, "regression" gives Thompson's scores, "Bartlett" given Bartlett's weighted least-squares scores. Partial matching allows these names to be abbreviated. Also note that some of the scores-types are not applicable when p > n.
-\item[\texttt{rotation}:] character. "none" or the name of a function to be used to rotate the factors: it will be called with first argument the loadings matrix, and should return a list with component loadings giving the rotated loadings, or just the rotated loadings. The options included in the package are: varimax, promax, quartimax, equamax with default to varimax.
+\item[\texttt{rotation}:] character. "none" or the name of a function to be used to rotate the factors: it will be called with first argument the loadings matrix, and should return a list with component loadings giving the rotated loadings, or just the rotated loadings. The options included in the package are: varimax (default) and promax. Other rotations can be found in the `GPArotation` package.
 \item[\texttt{control}:] A list of control values:\\
 nstart\\
 The number of starting values to be tried if start = NULL. Default 1.\\
